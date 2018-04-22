@@ -1,0 +1,103 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+}
+
+.container-fluid {
+	height: auto;
+	margin: 2% auto 0;
+}
+.container {
+	background-color: black;
+	height: auto;
+	width: 80%;
+	color: white;	
+}
+
+h1 {
+	letter-spacing: 4px;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+img {
+	max-width: 90%;
+	height: 150px;
+	margin-top: 2%;
+	border: 3px inset #999;
+	border-radius: 10px;
+}
+
+.playerOneContainer{
+	border:2px solid white;
+	height: 250px;
+	width: 49.3%;
+	margin: 10px 2px 5px;
+	text-align: center;
+	font-size: 1.8rem;
+	letter-spacing: 1px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+.playerTwoContainer {
+	border:2px solid white;
+	height: 250px;
+	width: 49.3%;
+	margin: 10px 2px 5px;
+	text-align: center;
+	font-size: 1.8rem;
+	letter-spacing: 1px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+.playerOptionsButtons {
+	height: 50px;
+	margin: 5px 0;
+	width: 33%;
+	text-align: center;
+
+}
+
+#atkbtn, #defbtn, #rushbtn {
+	width: 100%;
+	margin: 2px auto 0;
+	font-size: 1.9rem;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	border: 2px solid #c0c0c0;
+	border-radius: 10px;
+}
+
+.playerUIX {
+	border:2px solid #999;
+	height: 200px;
+	font-size: 2rem;
+	padding-top: 1%;
+	letter-spacing: 3px;
+	text-align: center;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.battleLog {
+	border:2px solid gold;
+	height: 200px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	letter-spacing: 2px;
+	background-color: white;
+	color: black;
+	margin-left: 7%;
+
+}
+
+.cpuStats {
+	display: none;
+}

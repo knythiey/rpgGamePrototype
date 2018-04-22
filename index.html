@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<!-- Import FontAwesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+	<!-- CDN bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Javascript Game</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="container">
+			<h1>Level 1 Normal</h1>
+			<div class="row">
+				<div class="col-md-6 playerOneContainer">
+					<img src="robot2.png" alt="robot pic">
+					<p>Hero <span id="userName"></span></p>
+					<p>Health Points: <span id="userhpStats"></span></p>
+				</div>
+				<div class="col-md-6 playerTwoContainer">
+					<img src="wolf.png" alt="robot pic">
+					<p id="cpuMsg"></p>
+					<p><span id="cpuName"></span> HP: <span id="cpuhpStats"></span></p>
+					
+					<div class="cpuStats">
+						<p>Attack: <span id="cpuatkStats"></span></p>
+						<p>Defense: <span id="cpudefStats"></span></p>
+						<p>speed: <span id="cpuspdStats"></span></p>
+					</div>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 playerOptionsButtons">
+					<button id="atkbtn" class="btn btn-primary"><span class="glyphicon glyphicon-flash"></span> Attack!</button>
+				</div>
+				<div class="col-md-3 playerOptionsButtons">
+					<button id="defbtn" class="btn btn-success"><i class="fas fa-shield-alt"></i> Defend!</button>
+				</div>
+				<div class="col-md-3 playerOptionsButtons">
+					<button id="rushbtn" class="btn btn-danger"><i class="fab fa-studiovinari"></i> Rush!</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 playerUIX">
+					<h3>User Stats</h3>
+					<p>Attack: <span id="useratkStats"></span></p>
+					<p>Defense: <span id="userdefStats"></span></p>
+					<p>Speed: <span id="userspdStats"></span></p>
+				</div>
+				<div class="col-md-7 battleLog">
+					<h4>Battle Log: </h4>
+					<p id="userLog"></p>
+					<p id="userLog2"></p>
+					<p id="cpuLog"></p>
+					<p id="cpuLog2"></p>
+				</div>
+			</div>
+		</div>		
+	</div>
+	
+	<!-- jQuery -->
+	<script 
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+  		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  		crossorigin="anonymous">
+  	</script>
+	
+	<!-- Import Custom Js -->
+	<script src="script.js"></script>
+</body>
+</html>
